@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './agregar-editar-eliminar-contacts.component.html',
   styleUrls: ['./agregar-editar-eliminar-contacts.component.scss']
 })
-export class AgregarEditarEliminarContactsComponent implements OnInit {
+export class AddeditremovecontactsComponent implements OnInit {
 
   constructor() { }
 

@@ -1,9 +1,9 @@
 export interface Contacts {
-    id : number, 
+    id? : number, 
     name : string,
     surname : string,
     cel : number,
     tel : number,
     email : string,
-    birthday : Date
+    birthday : string,
 }
