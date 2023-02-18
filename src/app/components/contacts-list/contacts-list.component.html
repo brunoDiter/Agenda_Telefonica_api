@@ -3,6 +3,7 @@
         Lista de contactos
     </h1>
 </div>
+<app-spinner *ngIf="loading"></app-spinner>
 
 <div class="container">
   
@@ -46,11 +47,11 @@
           </ng-container>
 
           <ng-container matColumnDef="acciones">
-            <th mat-header-cell *matHeaderCellDef> <button class="" mat-raised-button color="primary">Agregar</button> </th>
+            <th mat-header-cell *matHeaderCellDef> <button routerLink="/addContacts" class="" mat-raised-button color="primary">Agregar</button> </th>
             <td mat-cell *matCellDef="let element"> 
-              <mat-icon matTooltip="Buscar" class="search" fontIcon="search"></mat-icon>
-              <mat-icon matTooltip="Editar" class="edit" fontIcon="edit"></mat-icon>
-              <mat-icon matTooltip="Borrar" class="delete" fontIcon="delete"></mat-icon> 
+              <mat-icon routerLink="/contactsView/1" matTooltip="Ver" class="search" fontIcon="search"></mat-icon>
+              <mat-icon routerLink="/editContacts/1" matTooltip="Editar" class="edit" fontIcon="edit"></mat-icon>
+              <mat-icon (click)="eliminarContacto()" matTooltip="Borrar" class="delete" fontIcon="delete"></mat-icon> 
             </td>
           </ng-container>
 
