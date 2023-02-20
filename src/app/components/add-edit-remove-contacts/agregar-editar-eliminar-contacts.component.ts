@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-editar-eliminar-contacts.component.scss']
 })
 export class AddeditremovecontactsComponent implements OnInit {
+  
+  loading: boolean = false;
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
+  
+  
 
 }
